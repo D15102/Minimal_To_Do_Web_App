@@ -39,7 +39,7 @@ const ToDoItems = ({ todo }) => {
           setaddedTodo(e.target.value);
         }}
         placeholder="Your item..."
-        className={`flex-1 px-4 py-2 rounded-lg border-gray-700 text-white transition
+        className={`flex-1 px-4 py-2 rounded-lg border-gray-700 bg-gray-900 text-white transition
                     ${
                       !editable
                         ? "bg-gray-900 outline-none"

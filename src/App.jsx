@@ -80,7 +80,7 @@ const App = () => {
           <div className="w-full flex flex-col justify-center items-center mt-5 gap-5">
             <div className="flex gap-4">
               <SparklesTextDemo className={`text-white`} />
-              {/* <ToggleSwitch defaultChecked={false} /> */}
+              {/* Dark-Light Switch Goes There */}
             </div>
             <ToDoForm />
             {todos.length > 0 &&

@@ -14,7 +14,7 @@ const ToDoForm = () => {
     settodoText("")
   };
   return (
-    <div className="flex items-center space-x-3 p-4 bg-white dark:bg-gray-900 rounded-2xl shadow-md w-full max-w-md">
+    <div className="flex items-center space-x-3 p-4 bg-gray-900 rounded-2xl shadow-md w-full max-w-md">
       <input
         type="text"
         value={todoText}

@@ -6,7 +6,7 @@ const ToDoForm = () => {
   const [todoText, settodoText] = useState("");
   const { addToDo } = useToDo();
   const add = () => {
-    if (!todoText) toast.info("Alteast Give Some Task..");
+    if (!todoText) return toast.info("Alteast Give Some Task..");
     addToDo({
         todoTitle : todoText,
         completed : false

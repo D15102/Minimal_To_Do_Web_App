@@ -74,10 +74,10 @@ const App = () => {
     <ToDoProvider
       value={{ todos, addToDo, updateToDo, deleteToDo, toggleCompleted }}
     >
-        <>
+        <div className="">
           <CanvasCursor />
           <BoldCopy text="Todo List" className={`bold-copy`} />
-          <div className="w-full flex flex-col justify-center items-center mt-5 gap-5">
+          <div className="w-full flex flex-col justify-center items-center mt-5 gap-5 overflow-auto">
             <div className="flex gap-4">
               <SparklesTextDemo className={`text-white`} />
               {/* Dark-Light Switch Goes There */}
@@ -99,7 +99,7 @@ const App = () => {
             theme="dark"
             transition={Flip}
           />
-        </>
+        </div>
     </ToDoProvider>
       </ThemeProvider>
   );
